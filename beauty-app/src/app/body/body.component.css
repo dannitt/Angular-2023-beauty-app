@@ -1,0 +1,9 @@
+.container {
+    max-width: 1366px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    width: 90%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,42 @@
+.oldPost {
+    margin: 2em;
+    padding-left: 3em;
+    gap: 2em;
+    display: block;
+    border: 3px solid gray;
+    width: 90%;
+}
+.newPost {
+    margin: 2em;
+    padding-left: 3em;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid gray;
+    width: 90%;
+}
+.newPost h3 {
+    font-size: 20px;
+    color:blueviolet;
+}
+button {
+    display: block;
+    max-width: 100px;
+    border: 0.5px solid lightskyblue;
+    border-radius: 1.5px;
+    background-color: aquamarine;
+    color: black;
+    margin-bottom: 1em;
+}
+button:hover {
+    cursor: pointer;
+}
+.newContent {
+    display: grid;
+    grid-template-columns: 1fr 22fr 3fr;
+}
+form p {
+    color: red;
+}
+
+

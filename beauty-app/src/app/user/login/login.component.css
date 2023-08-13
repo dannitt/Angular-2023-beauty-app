@@ -1,0 +1,41 @@
+.login {
+    margin: 2em auto;
+    display: block;
+    max-width: 300px;
+    border: 3px solid gray;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+input {
+    margin-bottom: 0.5em;
+}
+button {
+    display: flex;
+    background-color: #5204aac2;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 0.8;
+}
+.container-register {
+    padding: 3em 0;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+p {
+    color: red;
+}
+@media screen and (max-width: 600px) {
+    .login {
+      display: block;
+      float: none;
+    }
+}

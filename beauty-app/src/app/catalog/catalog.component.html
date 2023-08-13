@@ -1,0 +1,19 @@
+<h1>Catalog Items</h1>
+<div>  
+    <ul *ngFor="let item of itemsList" class="card-list">
+        <li class="card">
+            <img src={{item.image}} alt={{item.title}}>
+            <header>
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.type }}</p>
+            </header>
+            <main>
+                <p>{{ item.description }}</p>
+                <p class="bottom">
+                    <span class="price">{{ item.price }}</span>
+                    <span *ngIf="isLogged"><button [routerLink]="item._id" class="details">Details</button></span>
+                <p>       
+            </main>
+        </li>
+    </ul>
+</div>

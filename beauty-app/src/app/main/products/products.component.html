@@ -1,0 +1,48 @@
+    <div class="card">
+        <img src={{item?.image}} alt={{item?.title}}>
+        <header>
+            <h3>{{ item?.title }}</h3>
+            <p>{{ item?.type }}</p>
+        </header>
+        <main>
+            <p>{{ item?.description }}</p>
+            <p class="price">{{ item?.price }}</p>
+            <hr />
+            <p class="preForm">In order to buy - fill the form:</p>
+        </main>
+    
+
+    <form class="buy" #form="ngForm" (ngSubmit)="buy(form)">
+        <div class="container">
+          <label for="email"><b>Email</b></label>
+          <input 
+          type="text" 
+          placeholder="Enter Email" 
+          name="email" 
+          #inputEmail="ngModel"
+          ngModel 
+          required
+        />
+            
+          <label for="address"><b>Address</b></label>
+          <input 
+            type="address" 
+            placeholder="Enter address" 
+            name="address" 
+            
+            required />
+
+          <label for="phone"><b>Phone number</b></label>
+          <input 
+            type="phone" 
+            placeholder="Enter phone number" 
+            name="phone" 
+            
+            required />         
+        </div>
+
+        <button>Buy</button>
+    </form>
+    </div>
+    
+    

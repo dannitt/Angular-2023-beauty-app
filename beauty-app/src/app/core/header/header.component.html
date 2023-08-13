@@ -1,0 +1,21 @@
+<header class="site-header">
+    <h1 class="site-title">Handmade Beauty</h1>
+    <nav>
+        <ul *ngIf="!isLoggedIn" class="right">
+            <li><a routerLink="/login">Log in</a></li>
+            <li><a routerLink="/register">Register</a></li>
+        </ul>
+        <ul *ngIf="isLoggedIn" class="right">
+            <li><a>{{email}} is here!</a></li>
+            <li (click)="logout()"><a routerLink="/home">Log out</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="left">
+            <li><a routerLink="/home">Home</a></li>
+            <li><a routerLink="/catalog">Catalog</a></li>
+            <li><a routerLink="/contactUs">Contact us</a></li>
+            <li><a routerLink="/blog">Blog</a></li>  
+        </ul>  
+    </nav>
+</header>

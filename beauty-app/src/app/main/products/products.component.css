@@ -1,0 +1,48 @@
+.card {
+    display: block;
+    margin: 2em auto;
+    min-height: 400px;
+    max-width: 360px;
+    width: 100%;
+    flex: 1 0 30%;
+    box-shadow: 0 0 8px 0px rgba(67, 67, 67, 0.5); 
+}
+.card img {
+    display: block;
+    min-height: 300px;
+    width: 100%;
+    height: auto; 
+    overflow: hidden;
+}
+header {
+    padding: 1em 1em 1em 2em;
+}
+h3 {
+    font-size: 20px;
+}
+main {
+    padding: 0 2em;
+}
+.preForm {
+    font-size: 20px;
+    color: blueviolet;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+input {
+    margin-bottom: 0.5em;
+}
+button {
+    border: 0.5px solid lightskyblue;
+    border-radius: 1.5px;
+    background-color: aquamarine;
+    color: black;
+    margin: 0.8em;
+    padding: 5px 25px;
+}
+button:hover {
+    cursor: pointer;
+}

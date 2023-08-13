@@ -1,0 +1,11 @@
+<h1>The best place to find Handmade Beauties!</h1>
+<p>The latest ordered products are here.</p>
+<body>
+    <div class="container">  
+        <ul *ngFor="let item of itemsList" class="card-list">
+            <li class="card">
+                <img src={{item.image}} alt={{item.title}}>
+            </li>
+        </ul>
+    </div>
+</body>

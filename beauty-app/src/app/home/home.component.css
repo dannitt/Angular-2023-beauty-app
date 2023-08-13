@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    min-height: 320px;
+    background-color: rgb(238, 238, 238);
+    align-items: center;
+}
+.container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    top: 25%;
+    left: 12%;
+}
+h1 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+li {
+    list-style-type: none;
+}
+img:hover {
+    width: 16em;
+}
+img {
+    height: 15em;
+    width: 13em;
+    margin: 0.5em;
+    transition: width 0.8s ease-in-out;
+}
+@media screen and (max-width: 600px) {
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:2em;
+        padding-bottom: 2em;
+    }
+}

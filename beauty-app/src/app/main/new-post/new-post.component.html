@@ -1,0 +1,63 @@
+<form *ngIf="isLogged" #form="ngForm" (ngSubmit)="newPostSubmitHandler(form)">
+        <div class="newPost">
+        <h3>Add new post</h3>
+        <div class="newTitle">
+                <label for="title"><b>Title: </b></label>
+                <input 
+                type="text"
+                placeholder="Enter title here" 
+                name="title"
+                ngModel 
+                #inputTitle="ngModel" 
+                required 
+                />
+
+        <ng-container *ngIf="inputTitle.touched">
+           <p *ngIf="inputTitle.errors?.['required']">Post title is required.</p>
+        </ng-container>
+        </div>
+        
+        <div class="newContent">
+        <label for="content"><b>Post:</b></label>
+                <input  
+                  type="text"
+                  name="content" 
+                  placeholder="Enter text here..."
+                  ngModel 
+                  #inputContent="ngModel" 
+                  required 
+                />
+        </div>
+
+        <div class="nickName">
+        <label for="nickName"><b>From: </b></label>
+        <input 
+          type="text" 
+          placeholder="NickName here" 
+          name="nickName" 
+          #inputNickName="ngModel"
+          ngModel
+          required 
+        />
+        <ng-container *ngIf="inputNickName.touched">
+                <p *ngIf="inputNickName.errors?.['required']">Post title is required.</p>
+        </ng-container>
+        </div>
+        <div><input 
+                type="datetime-local"
+                name="date"
+                #inputDate="ngModel"
+                ngModel
+                required 
+                />
+        </div>
+        
+        <button>Post</button>  
+        </div>
+</form>
+<div *ngFor="let post of postList" class="oldPost">
+        <h2>Title: {{post.title}}</h2>
+        <h3><b>Post:</b> {{post.content}}</h3>
+        <p><b>From:</b> {{post.nickName}}</p>
+        <p><b>Date:</b> {{post.date}}</p>  
+</div>
